@@ -16,4 +16,5 @@ jobs:
         path: ./README.md
     - name: Echo package.json
       run: echo "meghnasavit"
+    - name: something
       run: echo "${{ steps.package.outputs.content }}" 
