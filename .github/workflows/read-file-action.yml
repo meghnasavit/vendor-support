@@ -13,6 +13,6 @@ jobs:
       id: package
       uses: actions/checkout@v2
       with:
-        path: ./package.json
+        path: ./README.md
     - name: Echo package.json
       run: echo "${{ steps.package.outputs.content }}" 
