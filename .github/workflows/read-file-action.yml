@@ -8,11 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Print something
-      run: echo "$GITHUB_ACTION_PATH"
+      run: echo "$GITHUB_REPOSITORY"
     - name: Read package.json
       id: package
       uses: actions/checkout@v2
       with:
         path: ./README.md
     - name: Echo package.json
+      run: echo "meghnasavit"
       run: echo "${{ steps.package.outputs.content }}" 
