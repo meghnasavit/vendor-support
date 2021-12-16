@@ -7,6 +7,8 @@ jobs:
   print:
     runs-on: ubuntu-latest
     steps:
+    - name: Print something
+      run: echo "$GITHUB_REPOSITORY"
     - name: Read package.json
       id: package
       uses: juliangruber/read-file-action@v1
